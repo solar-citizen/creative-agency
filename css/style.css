@@ -1,0 +1,31 @@
+html,
+body {
+    height: 100%;
+    font-size: 1rem;
+}
+
+.gradient {
+    background: rgb(105,0,199);
+    background: linear-gradient(210deg, rgba(105,0,199,1) 0%, rgb(0, 97, 242) 100%);
+}
+
+.page-header {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+}
+
+.skills-list {
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+.skills-list__item {
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
+    line-height: 1.5rem;
+}
+
+.icon {
+    width: 5rem;
+    height: 5rem;
+}
