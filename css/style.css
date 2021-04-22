@@ -1,6 +1,14 @@
+body {
+    overflow-x: hidden;
+}
+
 .gradient {
     background: rgb(105,0,199);
     background: linear-gradient(210deg, rgba(105,0,199,1) 0%, rgb(0, 97, 242) 100%);
+}
+
+.page-header {
+    margin-top: 5rem;
 }
 
 .skills-list {
@@ -10,6 +18,7 @@
 .skills-list__item {
     background-image: url("../img/skills/check.svg");
     background-repeat: no-repeat;
+    padding-left: 2rem;
 }
 
 .icon {
@@ -26,6 +35,40 @@
     transform: scale(.9);
 }
 
+.col_1 {
+    order: 1;
+}
+
+.col_2 {
+    order: 2;
+}
+
+.col_3 {
+    order: 3;
+}
+
+.col_4 {
+    order: 4;
+}
+
+.col_5 {
+    order: 5;
+}
+
+.col_6 {
+    order: 6;
+}
+
 .author:hover {
     color: #aab2ba !important;
+}
+
+@media (max-width: 576px) {
+    .col_3 {
+        order: 4;
+    }
+
+    .col_4 {
+        order: 3;
+    }
 }
