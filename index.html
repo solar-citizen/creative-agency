@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
   </head>
-  <body class="home">
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -24,14 +24,18 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link active" aria-current="page" href="#page-header">Home</a>
+            <a class="nav-link" href="#partners">Partners</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
     </nav>
-    <header class="page-header gradient text-white">
+    <header id="page-header" class="page-header gradient text-white">
       <div class="container">
         <div class="row justify-content-center align-items-center pt-3">
           <div class="col-md-5">
@@ -57,7 +61,7 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,96C384,96,480,128,576,128C672,128,768,96,864,96C960,96,1056,128,1152,128C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </header>
-    <section class="partners">
+    <section id="partners" class="partners">
       <div class="container text-center">
         <div class="row g-5">
           <div class="col-md-2">
@@ -81,7 +85,7 @@
         </div>
       </div>
     </section>
-    <section class="skills gradient text-white">
+    <section id="skills" class="skills gradient text-white">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L48,58.7C96,53,192,43,288,80C384,117,480,203,576,218.7C672,235,768,181,864,176C960,171,1056,213,1152,208C1248,203,1344,149,1392,122.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
       <div class="container">
         <div class="row align-items-center">
@@ -116,7 +120,7 @@
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
-    <section class="features">
+    <section id="features" class="features">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-4">
@@ -167,14 +171,14 @@
         </div>
       </div>
     </section>
-    <section class="portfolio bg-light">
+    <section id="portfolio" class="portfolio bg-light">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 290"><path fill="#fff" fill-opacity="1" d="M0,288L48,250.7C96,213,192,139,288,133.3C384,128,480,192,576,202.7C672,213,768,171,864,176C960,181,1056,235,1152,224C1248,213,1344,139,1392,101.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
       </svg>
       <div class="container">
         <div class="row">
           <div class="col-md-10">
             <h2>
-              Lorem ipsum dolor sit amet
+              Check out our awesome portfolio!
             </h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -184,13 +188,19 @@
         </div>
         <div class="row my-3 g-3">
           <div class="col-md-4">
-            <img class="img-fluid rounded-3" src="img/portfolio/p1.jpg" alt="Portfolio Work 1">
+            <a href="#">
+              <img class="portfolio__img img-fluid rounded-3" src="img/portfolio/p1.jpg" alt="Portfolio Work 1">
+            </a>
           </div>
           <div class="col-md-4">
-            <img class="img-fluid rounded-3" src="img/portfolio/p2.jpg" alt="Portfolio Work 2">
+            <a href="#">
+              <img class="portfolio__img img-fluid rounded-3" src="img/portfolio/p2.jpg" alt="Portfolio Work 2">
+            </a>
           </div>
           <div class="col-md-4">
-            <img class="img-fluid rounded-3" src="img/portfolio/p3.jpg" alt="Portfolio Work 3">
+            <a href="#">
+              <img class="portfolio__img img-fluid rounded-3" src="img/portfolio/p3.jpg" alt="Portfolio Work 3">
+            </a>
           </div>
         </div>
         <div class="row mt-5 justify-content-end">
@@ -203,19 +213,99 @@
           </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160"><path fill="#fff" fill-opacity="1" d="M0,32L48,58.7C96,85,192,139,288,144C384,149,480,107,576,80C672,53,768,43,864,37.3C960,32,1056,32,1152,42.7C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
     </section>
-    <section class="services gradient">
+    <section id="services" class="services gradient text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,320L48,293.3C96,267,192,213,288,181.3C384,149,480,139,576,160C672,181,768,235,864,266.7C960,299,1056,309,1152,298.7C1248,288,1344,256,1392,240L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+      </svg>
       <div class="container">
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6"></div>
-          <div class="col-md-6"></div>
-          <div class="col-md-6"></div>
-          <div class="col-md-6"></div>
-          <div class="col-md-6"></div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5">
+            <button type="button" class="btn btn-outline-success mb-2">Coding</button>
+            <h1>
+              We code.
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur corporis cum,
+              cumque eos illum impedit in iure molestiae nemo quae rem sit voluptate.
+              A consequuntur dignissimos fugiat officiis sit?
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img src="img/services/coding.svg" alt="Coding image">
+          </div>
+          <div class="col-md-5">
+            <img src="img/services/marketing.svg" alt="Marketing image">
+          </div>
+          <div class="col-md-5">
+            <button type="button" class="btn btn-outline-secondary mb-2">Marketing</button>
+            <h1>
+              We promote.
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur corporis cum,
+              cumque eos illum impedit in iure molestiae nemo quae rem sit voluptate.
+              A consequuntur dignissimos fugiat officiis sit?
+            </p>
+          </div>
+          <div class="col-md-5">
+            <button type="button" class="btn btn-outline-light mb-2">Selling</button>
+            <h1>
+              We sell.
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur corporis cum,
+              cumque eos illum impedit in iure molestiae nemo quae rem sit voluptate.
+              A consequuntur dignissimos fugiat officiis sit?
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img src="img/services/revenue.svg" alt="Revenue image">
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,320L48,293.3C96,267,192,213,288,181.3C384,149,480,139,576,160C672,181,768,235,864,266.7C960,299,1056,309,1152,298.7C1248,288,1344,256,1392,240L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-5">
+            <h2>
+              Contact Us:
+            </h2>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">
+                Email
+              </label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">
+                Message
+              </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-outline-secondary w-100">
+              Send
+            </button>
+          </div>
+          <div class="col-md-5">
+            <img src="img/contact/handshake.svg" alt="Contact image">
+          </div>
         </div>
       </div>
     </section>
+    <footer class="gradient m-0 p-3 fs-6 text-white">
+      <div class="container-fluid text-center">
+        <span>
+          Made by
+          <a class="author text-white fw-bold text-decoration-none" href="https://github.com/solar-citizen">SCitizen</a>
+          2021
+        </span>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
